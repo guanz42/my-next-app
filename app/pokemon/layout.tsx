@@ -9,11 +9,13 @@ export default async function Layout({
   const { results } = await getPokemons();
 
   return (
-    <div className="flex gap-10 bg-sky-50">
+    <div className="flex m-10">
       <ul>
         {results.map(({ name }: { name: string }, i: number) => (
           <li key={`$name_${i}`}>
-            <Link href={`/pokemon/${name}`}>{name}</Link>
+            <Link href={`/pokemon/${name}`} className="underline">
+              <b>{name}</b>
+            </Link>
           </li>
         ))}
       </ul>

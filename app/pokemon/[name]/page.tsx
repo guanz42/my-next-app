@@ -12,8 +12,10 @@ export default async function Page({ params }: { params: { name: string } }) {
 
   return (
     <div>
-      <h1>{name}</h1>
-      <Image alt={`Artwork for ${name}`} src={img} width={200} height={200} />
+      <h1>
+        <b>{name}</b>
+      </h1>
+      <Image alt={`Artwork for ${name}`} src={img} width={400} height={400} />
     </div>
   );
 }
