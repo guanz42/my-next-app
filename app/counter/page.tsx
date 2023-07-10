@@ -6,9 +6,9 @@ export default function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-sky-50">
+    <div>
       <p>You clicked {count} times</p>
-      <button className="bg-sky-200" onClick={() => setCount(count + 1)}>
+      <button className="bg-red-100" onClick={() => setCount(count + 1)}>
         Click me
       </button>
     </div>
